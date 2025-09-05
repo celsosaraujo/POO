@@ -49,6 +49,19 @@ namespace _01_DeclaracaoClasse
             contaCelso.Sacar(200.00);
             Console.WriteLine($"Saldo Atual: {contaCelso.ConsultaSaldo()}");
                         
+
+            Aluno alunoCelso = new Aluno();
+
+            alunoCelso.Codigo = 1;
+            alunoCelso.Nome = "Celso Serrano Araujo";
+            alunoCelso.LancarNota(1, 8.6);
+            alunoCelso.LancarNota(2, 9.0);
+            alunoCelso.LancarNota(3, 9.5);
+            alunoCelso.LancarNota(4, 10.0);
+
+            Console.WriteLine($"Aluno {alunoCelso.Nome} {alunoCelso.Mencao()} com média de {alunoCelso.CalcularMedia():N2}");
+              
+
         }
     }
 
@@ -165,10 +178,12 @@ namespace _01_DeclaracaoClasse
 
         public string Mencao()
         {
-            if (CalcularMedia() >= 5.0)
-                return "Aprovado";
-            else
-                return "Reprovado";
+            //   if (CalcularMedia() >= 5.0)
+            //      return "Aprovado";
+            //  else
+            //      return "Reprovado";
+            return (CalcularMedia() >= 5.0)? "Aprovado" : "Reprovado";
+
         }
 
     }
