@@ -36,6 +36,19 @@ namespace _01_DeclaracaoClasse
             obj5.Base = 12.75;
             obj5.ImprimeArea();
 
+            Conta contaCelso = new Conta();
+            contaCelso.Banco = 237;
+            contaCelso.Agencia = "002-7";
+            contaCelso.Numero = "99520-7";
+            contaCelso.Saldo = 0.00;
+            contaCelso.Limite = 500.00;
+
+            contaCelso.Depositar(1050.55);
+            Console.WriteLine($"Saldo Atual: {contaCelso.ConsultaSaldo()}");
+
+            contaCelso.Sacar(200.00);
+            Console.WriteLine($"Saldo Atual: {contaCelso.ConsultaSaldo()}");
+                        
         }
     }
 
@@ -100,6 +113,64 @@ namespace _01_DeclaracaoClasse
             Console.WriteLine($"Triângulo com base de {Base:N2}, altura de {Altura:N2} possui uma área de {CalculaArea():N2}");
             
         }
+    }
+
+    public class Conta
+    {
+        public int Banco;
+        public string Agencia;
+        public string Numero;
+        public double Saldo;
+        public double Limite;
+
+        public void Depositar(double valor)
+        {
+            //Saldo = Saldo + valor;
+            Saldo += valor;
+        }
+
+        public void Sacar(double valor)
+        {
+            Saldo = Saldo - valor;
+        }
+
+        public double ConsultaSaldo() 
+        { 
+            return Saldo;
+        }
+
+    }
+
+    public class  Aluno
+    {
+        public int Codigo;
+        public string Nome;
+        public double[] Notas = new double[4];
+
+        public void LancarNota( int trimestre, double nota)
+        {
+            Notas[trimestre - 1] = nota;
+        }
+
+        public double CalcularMedia()
+        {
+            double media = 0;
+
+            foreach (double nota in Notas )
+            {
+                media += nota;
+            }
+            return media/4.0;
+        }
+
+        public string Mencao()
+        {
+            if (CalcularMedia() >= 5.0)
+                return "Aprovado";
+            else
+                return "Reprovado";
+        }
+
     }
 
 }
