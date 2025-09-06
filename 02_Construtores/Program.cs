@@ -10,8 +10,11 @@ namespace _02_Construtores
     {
         static void Main(string[] args)
         {
-            Quadrado quadrado = new Quadrado(5);
+            Quadrado quadrado = new Quadrado();
             quadrado.ImprimirArea();
+
+            Quadrado quadrado1 = new Quadrado(10);
+            quadrado1.ImprimirArea();
 
             Retangulo obj3 = new Retangulo(15,5);
             obj3.ImprimeArea();
@@ -30,6 +33,13 @@ namespace _02_Construtores
         //Modificar de acesso Private
         //pode ser acessado apenas dentro da Classe
         private int Lado;
+
+        //Overload (Sobrecarga) de Construtor
+        //Declarar mais de um construtor com a lista de argumentos diferentes
+        public Quadrado()
+        {
+            this.Lado = 5;
+        }
 
         //O Construtor serve para instanciar o objeto e
         //Inicializar os atributos
