@@ -15,7 +15,7 @@ namespace _03_Propriedades
             //Conta conta = new Conta();
             Conta conta = new Conta("999-88");
 
-            conta.Nome = "Celso Serrano Araujo";
+            conta.setNome("Celso Serrano Araujo");
 
             //Não é possível atribuir o valor em um atributo privado
             //conta.numero = "999-88";                      
@@ -50,7 +50,7 @@ namespace _03_Propriedades
                 }
                 else if (operacao.ToUpper() == "E")
                 {
-                    Console.WriteLine($"Conta: {conta.getNumero()} Nome: {conta.Nome} Saldo: {conta.getSaldo()}");
+                    Console.WriteLine($"Conta: {conta.getNumero()} Nome: {conta.getNome()} Saldo: {conta.getSaldo():c2}");
                     break;
                 }
                 else
@@ -64,7 +64,7 @@ namespace _03_Propriedades
     {
         private string numero;
 
-        public string Nome;
+        private string nome;
 
         public Conta(string numero)
         {
@@ -89,6 +89,16 @@ namespace _03_Propriedades
         public string getNumero()
         {
             return numero;
+        }
+
+        public string getNome()
+        {
+            return nome;
+        }
+
+        public void setNome(string nome)
+        {
+            this.nome = nome;
         }
 
         public void Depositar(decimal valor)
