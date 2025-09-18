@@ -11,8 +11,9 @@ namespace _08_Aluno
         static void Main(string[] args)
         {
             Console.Write("Digite o nome do aluno: ");
-            string nome = Console.ReadLine();
-            Aluno aluno = new Aluno(nome);
+            //string nome = Console.ReadLine();
+            //Aluno aluno = new Aluno(nome);
+            Aluno aluno = new Aluno( Console.ReadLine() );
 
             Console.Write("Informe a Idade: ");
             aluno.Idade = int.Parse(Console.ReadLine());
