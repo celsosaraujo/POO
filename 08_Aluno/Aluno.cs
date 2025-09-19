@@ -5,14 +5,14 @@ namespace _08_Aluno
 {
     internal class Aluno
     {
-        private string nome;
-        public string Nome { get {return nome; } }
+        //private string nome;
+        public string Nome { get; }
 
         private int idade;
         public int Idade {
             get { return idade; }
             set { 
-                if(value>= 0) 
+                if(value >= 0) 
                     idade = value;
                 else
                     Console.WriteLine("Idade Inválida");
@@ -24,7 +24,7 @@ namespace _08_Aluno
         public string Situacao { get { return (Media >= 6) ? "Aprovado" : "Reprovado"; } }
         public Aluno(string nome)
         {
-            this.nome = nome;
+            this.Nome = nome;
         }
     }
 }

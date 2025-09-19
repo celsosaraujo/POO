@@ -24,7 +24,7 @@ namespace _08_Aluno
             Console.Write("Informe a 2ª Nota: ");
             aluno.Nota2 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Nome: {aluno.Nome} Idade {aluno.Idade} 1º Nota: {aluno.Nota1} 2ª Nota: {aluno.Nota2} Média: {aluno.Media} Situação: {aluno.Situacao}");
+            Console.WriteLine($"Nome: {aluno.Nome}\nIdade {aluno.Idade}\n1º Nota: {aluno.Nota1}\n2ª Nota: {aluno.Nota2}\nMédia: {aluno.Media}\nSituação: {aluno.Situacao}");
         }
     }
 }
