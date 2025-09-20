@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            Circulo circulo = new Circulo { Raio = 10 };
+            circulo.Imprimir();
         }
     }
 }
