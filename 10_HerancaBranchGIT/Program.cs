@@ -36,6 +36,9 @@ namespace _10_HerancaBranchGIT
 
             Circulo circulo = new Circulo { Raio = 10 };
             circulo.Imprimir();
+
+            SetorCircular setorCircular = new SetorCircular { Raio = 5, Angulo = 90 };
+            setorCircular.Imprimir();
         }
     }
 }
