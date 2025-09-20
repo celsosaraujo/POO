@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _10_HerancaBranchGIT
 {
@@ -10,8 +6,15 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
-            Quadrado quadrado = new Quadrado { Lado = 10};
-            quadrado.Imprimir();
+            TrianguloIsosceles triangulo = new TrianguloIsosceles
+            {
+                Base = 10,
+                Lado = 8
+            };
+
+            triangulo.Imprimir();
+
+            Console.ReadKey();
         }
     }
 }
