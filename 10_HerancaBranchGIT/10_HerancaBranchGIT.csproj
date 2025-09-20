@@ -45,11 +45,14 @@
   <ItemGroup>
     <Compile Include="Forma.cs" />
     <Compile Include="Hexagonoregular.cs" />
+    <Compile Include="Estrela.cs" />
     <Compile Include="PentagonoRegular.cs" />
+    <Compile Include="OctogonoRegular.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quadrado.cs" />
     <Compile Include="TrapezioIsoceles.cs" />
+    <Compile Include="TrianguloEquilatero.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
