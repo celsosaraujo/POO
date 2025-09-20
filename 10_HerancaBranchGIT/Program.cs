@@ -34,6 +34,8 @@ namespace _10_HerancaBranchGIT
             TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
             trianguloEquilatero.Imprimir();
 
+            Circulo circulo = new Circulo { Raio = 10 };
+            circulo.Imprimir();
         }
     }
 }
