@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
+            pentagono.Imprimir();
         }
     }
 }
