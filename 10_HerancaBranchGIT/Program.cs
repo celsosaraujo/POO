@@ -13,6 +13,15 @@ namespace _10_HerancaBranchGIT
             Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
             trapezio.Imprimir();
 
+            PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
+            pentagono.Imprimir();
+            Quadrado quadrado = new Quadrado { Lado = 10};
+            quadrado.Imprimir();
+
+            TrapezioIsosceles trapezioIsoceles = new TrapezioIsosceles {BaseMenor = 10, BaseMaior = 20, Altura = 50  };
+            trapezioIsoceles.Imprimir();
+            TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
+            trianguloEquilatero.Imprimir();
         }
     }
 }
