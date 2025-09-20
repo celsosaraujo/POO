@@ -15,13 +15,22 @@ namespace _10_HerancaBranchGIT
             trapezio.Imprimir();
 
 
+            OctogonoRegular octogonoRegular = new OctogonoRegular { Lado = 8.9 };
+            octogonoRegular.Imprimir();
             PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
             pentagono.Imprimir();
             Quadrado quadrado = new Quadrado { Lado = 10};
             quadrado.Imprimir();
 
+            Estrela estrela = new Estrela(5, 10, 4);
+            estrela.Imprimir();
+
             TrapezioIsosceles trapezioIsoceles = new TrapezioIsosceles {BaseMenor = 10, BaseMaior = 20, Altura = 50  };
             trapezioIsoceles.Imprimir();
+
+            Hexagonoregular hexagonoregular = new Hexagonoregular(10);
+           Console.WriteLine($"Tipo: HEXÁGONO REGULAR - Área: {hexagonoregular.AreaHexagono()}");
+
             TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
             trianguloEquilatero.Imprimir();
 
