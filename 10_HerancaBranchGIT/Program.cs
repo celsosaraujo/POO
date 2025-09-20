@@ -12,6 +12,7 @@ namespace _10_HerancaBranchGIT
         {
             Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
             trapezio.Imprimir();
+
         }
     }
 }
