@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
+            trianguloEquilatero.Imprimir();
         }
     }
 }
