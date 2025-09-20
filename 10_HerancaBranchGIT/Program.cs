@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            Quadrado quadrado = new Quadrado { Lado = 10};
+            quadrado.Imprimir();
         }
     }
 }
