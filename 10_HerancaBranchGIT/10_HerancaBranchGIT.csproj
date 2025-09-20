@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormaNova.cs" />
     <Compile Include="Forma.cs" />
     <Compile Include="Hexagonoregular.cs" />
     <Compile Include="Estrela.cs" />

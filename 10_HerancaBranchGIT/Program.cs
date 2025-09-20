@@ -28,6 +28,9 @@ namespace _10_HerancaBranchGIT
 
             TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
             trianguloEquilatero.Imprimir();
+
+            FormaNova formaNova = new FormaNova { Altura = 50 };
+            formaNova.Imprimir();
         }
     }
 }
