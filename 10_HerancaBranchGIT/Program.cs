@@ -17,6 +17,8 @@ namespace _10_HerancaBranchGIT
 
             TrapezioIsosceles trapezioIsoceles = new TrapezioIsosceles {BaseMenor = 10, BaseMaior = 20, Altura = 50  };
             trapezioIsoceles.Imprimir();
+            TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
+            trianguloEquilatero.Imprimir();
         }
     }
 }
