@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace _10_HerancaBranchGIT
 {
-    internal class Program
+    internal class Program 
     {
         static void Main(string[] args)
         {
+            HeptagonoRegular Heptagono = new HeptagonoRegular {Lado = 10 };
+            Heptagono.Imprimir();
         }
     }
 }
