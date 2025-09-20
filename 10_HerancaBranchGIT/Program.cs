@@ -24,6 +24,9 @@ namespace _10_HerancaBranchGIT
             trapezioIsoceles.Imprimir();
             TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
             trianguloEquilatero.Imprimir();
+
+            SetorCircular setorCircular = new SetorCircular { Raio = 5, Angulo = 90 };
+            setorCircular.Imprimir();
         }
     }
 }
