@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
+            trapezio.Imprimir();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace _10_HerancaBranchGIT
 
         public void Imprimir()
         {
-            Console.WriteLine($"Forma: {getTipo()} com área de: {getArea():(n2)}");
+            Console.WriteLine($"Forma: {getTipo()} com área de: {getArea():n2}");
         }
 
     }
