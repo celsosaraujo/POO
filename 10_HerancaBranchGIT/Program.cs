@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            OctogonoRegular octogonoRegular = new OctogonoRegular { Lado = 8.9 };
+            octogonoRegular.Imprimir();
             PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
             pentagono.Imprimir();
             Quadrado quadrado = new Quadrado { Lado = 10};
