@@ -10,6 +10,8 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            Retangulo retangulo = new Retangulo { Altura = 10, Base = 12 };
+            retangulo.Imprimir();
         }
     }
 }
