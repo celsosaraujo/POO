@@ -18,6 +18,7 @@ namespace _10_HerancaBranchGIT
             Quadrado quadrado = new Quadrado { Lado = 10 };
             quadrado.Imprimir();
 
+           
 
             Losango losango = new Losango { DiagonalMaior = 12, DiagonalMenor = 8 };
             losango.Imprimir();
