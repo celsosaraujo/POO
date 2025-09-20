@@ -25,5 +25,7 @@ namespace _10_HerancaBranchGIT
         {
             return 2 * (1 + Math.Sqrt(2)) * Math.Pow(Lado, 2);
         }
+
+
     }
 }
