@@ -17,6 +17,9 @@ namespace _10_HerancaBranchGIT
             Quadrado quadrado = new Quadrado { Lado = 10};
             quadrado.Imprimir();
 
+            Estrela estrela = new Estrela(5, 10, 4);
+            estrela.Imprimir();
+
             TrapezioIsosceles trapezioIsoceles = new TrapezioIsosceles {BaseMenor = 10, BaseMaior = 20, Altura = 50  };
             trapezioIsoceles.Imprimir();
             TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero { Lado = 15 };
