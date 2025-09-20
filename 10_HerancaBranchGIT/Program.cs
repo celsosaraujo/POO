@@ -39,6 +39,9 @@ namespace _10_HerancaBranchGIT
 
             SetorCircular setorCircular = new SetorCircular { Raio = 5, Angulo = 90 };
             setorCircular.Imprimir();
+
+            FormaNova formaNova = new FormaNova { Altura = 50 };
+            formaNova.Imprimir();
         }
     }
 }

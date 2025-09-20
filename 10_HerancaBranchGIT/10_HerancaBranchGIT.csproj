@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circulo.cs" />
+    <Compile Include="FormaNova.cs" />
     <Compile Include="Forma.cs" />
     <Compile Include="Hexagonoregular.cs" />
     <Compile Include="Estrela.cs" />
