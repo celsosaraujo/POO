@@ -10,6 +10,7 @@ namespace _10_HerancaBranchGIT
     {
         static void Main(string[] args)
         {
+            OctogonoRegular octogonoRegular = new OctogonoRegular { Lado = 8.9 };
         }
     }
 }
