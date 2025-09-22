@@ -4,28 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace _10_HerancaBranchGIT
 {
-    internal class OctogonoRegular : Forma
+    internal class Circulo : Forma
     {
-        public double Lado { get; set; }
-
-        public OctogonoRegular(double lado)
-        {
-            Lado = lado;
-        }
+        public int Raio { get; set; }
 
         public override string getTipo()
         {
-            return "Octógono Regular";
+            return "Círculo";
         }
 
         public override double getArea()
         {
-            return 2 * (1 + Math.Sqrt(2)) * Math.Pow(Lado, 2);
+           return Math.PI * Raio * Raio;
         }
-
-
     }
 }
