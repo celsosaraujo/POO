@@ -8,6 +8,7 @@
         public override string getTipo()
         {
             return "Losango";
+
         }
 
         public override double getArea()
