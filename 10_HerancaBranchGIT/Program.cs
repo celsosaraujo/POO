@@ -14,13 +14,9 @@ namespace _10_HerancaBranchGIT
             Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
             trapezio.Imprimir();
 
-
-            OctogonoRegular octogonoRegular = new OctogonoRegular { Lado = 8.9 };
-            octogonoRegular.Imprimir();
             PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
             pentagono.Imprimir();
             Quadrado quadrado = new Quadrado { Lado = 10};
-            Quadrado quadrado = new Quadrado { Lado = 10 };
             quadrado.Imprimir();
 
            
