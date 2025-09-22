@@ -52,6 +52,7 @@
     <Compile Include="OctogonoRegular.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retangulo.cs" />
     <Compile Include="Trapezio.cs" />
     <Compile Include="Quadrado.cs" />
     <Compile Include="SetorCircular.cs" />

@@ -12,6 +12,11 @@ namespace _10_HerancaBranchGIT
         {
             OctogonoRegular octogonoRegular = new OctogonoRegular (8.0);
             octogonoRegular.Imprimir();
+
+            Retangulo retangulo = new Retangulo { Altura = 10, Base = 12 };
+            retangulo.Imprimir();
+
+
             Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
             trapezio.Imprimir();
             
@@ -26,6 +31,7 @@ namespace _10_HerancaBranchGIT
             TrapezioIsosceles trapezioIsoceles = new TrapezioIsosceles {BaseMenor = 10, BaseMaior = 20, Altura = 50  };
             trapezioIsoceles.Imprimir();
 
+
             Hexagonoregular hexagonoregular = new Hexagonoregular(10);
            Console.WriteLine($"Tipo: HEXÁGONO REGULAR - Área: {hexagonoregular.AreaHexagono()}");
 
@@ -34,6 +40,7 @@ namespace _10_HerancaBranchGIT
 
             Circulo circulo = new Circulo { Raio = 10 };
             circulo.Imprimir();
+
 
             SetorCircular setorCircular = new SetorCircular { Raio = 5, Angulo = 90 };
             setorCircular.Imprimir();
