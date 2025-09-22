@@ -20,10 +20,16 @@ namespace _10_HerancaBranchGIT
             Trapezio trapezio = new Trapezio(baseMaior: 10, baseMenor: 5, altura: 4);
             trapezio.Imprimir();
             
+
             PentagonoRegular pentagono = new PentagonoRegular { lado = 10 };
             pentagono.Imprimir();
             Quadrado quadrado = new Quadrado { Lado = 10};
             quadrado.Imprimir();
+
+           
+
+            Losango losango = new Losango { DiagonalMaior = 12, DiagonalMenor = 8 };
+            losango.Imprimir();
 
             Estrela estrela = new Estrela(5, 10, 4);
             estrela.Imprimir();

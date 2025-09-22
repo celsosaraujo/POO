@@ -46,6 +46,7 @@
     <Compile Include="Circulo.cs" />
     <Compile Include="FormaNova.cs" />
     <Compile Include="Forma.cs" />
+    <Compile Include="Losango.cs" />
     <Compile Include="Hexagonoregular.cs" />
     <Compile Include="Estrela.cs" />
     <Compile Include="PentagonoRegular.cs" />
