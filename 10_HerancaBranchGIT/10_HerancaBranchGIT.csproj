@@ -55,6 +55,7 @@
     <Compile Include="Retangulo.cs" />
     <Compile Include="Trapezio.cs" />
     <Compile Include="Quadrado.cs" />
+    <Compile Include="SetorCircular.cs" />
     <Compile Include="TrapezioIsoceles.cs" />
     <Compile Include="TrianguloEquilatero.cs" />
   </ItemGroup>
