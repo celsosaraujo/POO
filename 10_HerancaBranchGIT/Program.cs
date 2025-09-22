@@ -42,6 +42,9 @@ namespace _10_HerancaBranchGIT
             Circulo circulo = new Circulo { Raio = 10 };
             circulo.Imprimir();
 
+
+            FormaNova formaNova = new FormaNova { Altura = 50 };
+            formaNova.Imprimir();
         }
     }
 }
