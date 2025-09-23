@@ -16,17 +16,30 @@ namespace _11_HerancaGitBranch
             PicPay bancoPicPay = new PicPay { NomeBanco = "PicPay"};
             bancoPicPay.imprimirDados();
 
+            BancoDoBrasil bancoDoBrasil = new BancoDoBrasil { NomeBanco = "Banco do Brasil S.A." };
+            bancoDoBrasil.imprimirDados();
+        
             Carrefour bancoCarrefour = new Carrefour { NomeBanco = "Banco Carrefour S.A." };
             bancoCarrefour.imprimirDados();
 
             Original bancoOriginal = new Original { NomeBanco = "Banco Original S.A." };
             bancoOriginal.imprimirDados();
 
+            BancoBrasil bancoBrasil = new BancoBrasil { NomeBanco = "Banco Brasil S.A." };
+            bancoBrasil.imprimirDados();
+
+
+
+
             Next bancoNext = new Next { NomeBanco = "Banco Next S.A." };
             bancoNext.imprimirDados();
 
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
+
+            Santander bancoSantander = new Santander { NomeBanco = "Banco Santander (Brasil) S.A." };
+            bancoSantander.imprimirDados();
+
         }
     }
 }
