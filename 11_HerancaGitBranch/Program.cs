@@ -16,10 +16,8 @@ namespace _11_HerancaGitBranch
             Carrefour bancoCarrefour = new Carrefour { NomeBanco = "Banco Carrefour S.A." };
             bancoCarrefour.imprimirDados();
 
-
             Original bancoOriginal = new Original { NomeBanco = "Banco Original S.A." };
             bancoOriginal.imprimirDados();
-
 
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
