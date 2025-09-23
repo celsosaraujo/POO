@@ -13,16 +13,15 @@ namespace _11_HerancaGitBranch
             Bradesco bancoBradesco = new Bradesco { NomeBanco = "Banco Bradesco S.A." };
             bancoBradesco.imprimirDados();
 
+            BancoDoBrasil bancoDoBrasil = new BancoDoBrasil { NomeBanco = "Banco do Brasil S.A." };
+            bancoDoBrasil.imprimirDados();
+        
             Original bancoOriginal = new Original { NomeBanco = "Banco Original S.A." };
             bancoOriginal.imprimirDados();
 
 
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
-
-            BancoDoBrasil bancoDoBrasil = new BancoDoBrasil { NomeBanco = "Banco do Brasil S.A." };
-            bancoDoBrasil.imprimirDados();
-        
         }
     }
 }
