@@ -19,6 +19,9 @@ namespace _11_HerancaGitBranch
 
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
+
+            Itau bancoItau = new Itau { NomeBanco = "Itaú S.A" };
+            bancoItau.imprimirDados();
         }
     }
 }
