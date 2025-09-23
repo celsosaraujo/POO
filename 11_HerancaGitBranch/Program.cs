@@ -12,6 +12,9 @@ namespace _11_HerancaGitBranch
         {
             Bradesco bancoBradesco = new Bradesco { NomeBanco = "Banco Bradesco S.A." };
             bancoBradesco.imprimirDados();
+
+            PicPay bancoPicPay = new PicPay { NomeBanco = "PicPay"};
+            bancoPicPay.imprimirDados();
         }
     }
 }
