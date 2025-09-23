@@ -50,6 +50,7 @@
     <Compile Include="Carrefour.cs" />
     <Compile Include="Next.cs" />
     <Compile Include="Original.cs" />
+    <Compile Include="Nubank.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

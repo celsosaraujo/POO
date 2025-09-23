@@ -30,6 +30,11 @@ namespace _11_HerancaGitBranch
 
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
+
+            Nubank nubank = new Nubank { NomeBanco = "NU Pagamentos S.A. – Nubank" };
+            nubank.imprimirDados();
+
+
         }
     }
 }
