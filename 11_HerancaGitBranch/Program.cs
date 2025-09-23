@@ -13,6 +13,12 @@ namespace _11_HerancaGitBranch
             Bradesco bancoBradesco = new Bradesco { NomeBanco = "Banco Bradesco S.A." };
             bancoBradesco.imprimirDados();
 
+            PicPay bancoPicPay = new PicPay { NomeBanco = "PicPay"};
+            bancoPicPay.imprimirDados();
+
+            BancoDoBrasil bancoDoBrasil = new BancoDoBrasil { NomeBanco = "Banco do Brasil S.A." };
+            bancoDoBrasil.imprimirDados();
+        
             Carrefour bancoCarrefour = new Carrefour { NomeBanco = "Banco Carrefour S.A." };
             bancoCarrefour.imprimirDados();
 
@@ -34,6 +40,14 @@ namespace _11_HerancaGitBranch
             Nubank nubank = new Nubank { NomeBanco = "NU Pagamentos S.A. – Nubank" };
             nubank.imprimirDados();
 
+
+
+            Santander bancoSantander = new Santander { NomeBanco = "Banco Santander (Brasil) S.A." };
+            bancoSantander.imprimirDados();
+
+
+            Itau bancoItau = new Itau { NomeBanco = "Itaú S.A" };
+            bancoItau.imprimirDados();
 
         }
     }
