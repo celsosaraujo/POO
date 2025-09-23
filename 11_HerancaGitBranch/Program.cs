@@ -19,6 +19,9 @@ namespace _11_HerancaGitBranch
             Original bancoOriginal = new Original { NomeBanco = "Banco Original S.A." };
             bancoOriginal.imprimirDados();
 
+            Next bancoNext = new Next { NomeBanco = "Banco Next S.A." };
+            bancoNext.imprimirDados();
+
             bancoPAN bancoPAN = new bancoPAN { NomeBanco = "Banco PAN S.A." };
             bancoPAN.imprimirDados();
         }
