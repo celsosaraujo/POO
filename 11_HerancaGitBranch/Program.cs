@@ -12,6 +12,9 @@ namespace _11_HerancaGitBranch
         {
             Bradesco bancoBradesco = new Bradesco { NomeBanco = "Banco Bradesco S.A." };
             bancoBradesco.imprimirDados();
+
+            Carrefour bancoCarrefour = new Carrefour { NomeBanco = "Banco Carrefour S.A." };
+            bancoCarrefour.imprimirDados();
         }
     }
 }
