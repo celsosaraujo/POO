@@ -44,7 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banco.cs" />
+    <Compile Include="bancoPAN.cs" />
     <Compile Include="Bradesco.cs" />
+    <Compile Include="Carrefour.cs" />
+    <Compile Include="Next.cs" />
+    <Compile Include="Original.cs" />
     <Compile Include="PicPay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
