@@ -56,7 +56,7 @@ namespace _17_Calendario
 
             Console.WriteLine("DOM\tSEG\tTER\tQUA\tQUI\tSEX\tSAB");
                         
-            Feriado[] diasFeriados = RetornaFeriados();
+            List<Feriado> diasFeriados = RetornaFeriados();
             //bool ehFeriado;
 
             //impressão do calendário
@@ -66,19 +66,7 @@ namespace _17_Calendario
                 {
                     if (calendario[semana, diaSemana] != 0)
                     {
-                        /*ehFeriado = false;
-
-                        for (int posicaoFeriados = 0; posicaoFeriados < diasFeriados.Length ; posicaoFeriados++)
-                        {
-                            if( diasFeriados[posicaoFeriados] != null && diasFeriados[posicaoFeriados].Dia == calendario[semana,diaSemana]) 
-                            {
-                                ehFeriado = true;
-                                break;
-                            }
-                        }*/
-
-                        //if (diasFeriados.Contains(calendario[semana, diaSemana]) || diaSemana == 0)
-                        //if (ehFeriado || diaSemana == 0)
+                        
                         if (diasFeriados.Any( feriado => feriado != null && feriado.Dia == calendario[semana,diaSemana] )|| diaSemana == 0)
                             Console.ForegroundColor = ConsoleColor.Red;
 
@@ -95,13 +83,7 @@ namespace _17_Calendario
             }
 
             Console.Write("\nFeriados: ");
-            /*for (int i = 0; i < diasFeriados.Length; i++)
-            {
-                if (diasFeriados[i] > 0)
-                {
-                    Console.Write($"{diasFeriados[i].ToString("D2")}\t");
-                }
-            }*/
+            
             foreach (Feriado diaFeriado in diasFeriados)
             {
                 if (diaFeriado != null)                
@@ -111,32 +93,32 @@ namespace _17_Calendario
 
         }
 
-        private Feriado[] RetornaFeriados()
+        private List<Feriado> RetornaFeriados()
         {
-            Feriado[] feriados = new Feriado[15];
+            List<Feriado> feriados = new List<Feriado>();
 
-            int indice = 0;
+            //int indice = 0;
                        
-            if (mes == 1) feriados[indice++] = new Feriado(1,"Confraternização Universal");
+            if (mes == 1) feriados.Add( new Feriado(1,"Confraternização Universal") );
             else if (mes == 4)
             {
-                feriados[indice++] = new Feriado(4,"Aniversário da Cidade");
-                feriados[indice++] = new Feriado(21,"Tiradentes");
+                feriados.Add( new Feriado(4,"Aniversário da Cidade") );
+                feriados.Add( new Feriado(21,"Tiradentes") );
             }
-            else if (mes == 5) feriados[indice++] = new Feriado(1,"Dia do Trabalho");
-            else if (mes == 7) feriados[indice++] = new Feriado(9, "Revolução Constitucionalista de SP");
-            else if (mes == 9) feriados[indice++] = new Feriado(7,"Independência do Brasil");
-            else if (mes == 10) feriados[indice++] = new Feriado(12,"Nossa Senhora Aparecida");
+            else if (mes == 5) feriados.Add( new Feriado(1,"Dia do Trabalho") );
+            else if (mes == 7) feriados.Add( new Feriado(9, "Revolução Constitucionalista de SP") );
+            else if (mes == 9) feriados.Add( new Feriado(7,"Independência do Brasil") );
+            else if (mes == 10) feriados.Add( new Feriado(12,"Nossa Senhora Aparecida") );
             else if (mes == 11)
             {
-                feriados[indice++] = new Feriado(2,"Finados");
-                feriados[indice++] = new Feriado(15,"Proclamação da Republica");
-                feriados[indice++] = new Feriado( 20, "Conciência Negra");
+                feriados.Add( new Feriado(2,"Finados") );
+                feriados.Add( new Feriado(15,"Proclamação da Republica") );
+                feriados.Add( new Feriado( 20, "Conciência Negra") );
             }
             else if (mes == 12)
             {
-                feriados[indice++] = new Feriado(8,"Padroeira da Cidade");
-                feriados[indice++] = new Feriado(25,"Natal");
+                feriados.Add( new Feriado(8,"Padroeira da Cidade") );
+                feriados.Add( new Feriado(25,"Natal") );
             }
             DateTime domingoDePascoa = DomingoDePascoa();
 
@@ -145,16 +127,16 @@ namespace _17_Calendario
             DateTime CorpuChrist = domingoDePascoa.AddDays(60);
 
             if (domingoDePascoa.Month == mes)
-                feriados[indice++] = new Feriado( domingoDePascoa.Day,"Páscoa");
+                feriados.Add( new Feriado( domingoDePascoa.Day,"Páscoa") );
 
             if (carnaval.Month == mes)
-                feriados[indice++] = new Feriado( carnaval.Day,"Carnaval");
+                feriados.Add( new Feriado( carnaval.Day,"Carnaval") );
 
             if (sextaFeiraSanta.Month == mes)
-                feriados[indice++] = new Feriado(sextaFeiraSanta.Day,"Sexta Feira Santa");
+                feriados.Add( new Feriado(sextaFeiraSanta.Day,"Sexta Feira Santa") );
 
             if (CorpuChrist.Month == mes)
-                feriados[indice++] = new Feriado( CorpuChrist.Day, "Corpus Christi");
+                feriados.Add( new Feriado( CorpuChrist.Day, "Corpus Christi") );
 
             //Array.Sort(feriados);
 
