@@ -21,4 +21,17 @@ namespace _17_Calendario
         Novembro,
         Dezembro
     }
+
+    public enum DiaDaSemana 
+    { 
+        Domingo = 0,
+        Segunda,
+        Terca,
+        Quarta,
+        Quinta,
+        Sexta,
+        Sabado
+    }
+
+    
 }
