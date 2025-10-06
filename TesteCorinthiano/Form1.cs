@@ -8,17 +8,7 @@ namespace TesteCorinthiano
         public FRMTesteCorinthiano()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }       
 
         private void btnNao_MouseEnter(object sender, EventArgs e)
         {
@@ -39,6 +29,13 @@ namespace TesteCorinthiano
 
             btnNao.Location = new Point(novaX, novaY);
             btnNao.BringToFront();
+        }
+
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Parabéns, você é uma pessoa de bom gosto!");
+            Application.Exit();
         }
     }
 }

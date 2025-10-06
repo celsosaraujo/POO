@@ -43,8 +43,7 @@
             pctCorinthians.Size = new Size(339, 338);
             pctCorinthians.SizeMode = PictureBoxSizeMode.StretchImage;
             pctCorinthians.TabIndex = 0;
-            pctCorinthians.TabStop = false;
-            pctCorinthians.Click += pictureBox1_Click;
+            pctCorinthians.TabStop = false;            
             // 
             // lblCorinthians
             // 
@@ -64,6 +63,7 @@
             btnSim.TabIndex = 2;
             btnSim.Text = "SIM";
             btnSim.UseVisualStyleBackColor = true;
+            btnSim.Click += btnSim_Click;
             // 
             // btnNao
             // 
@@ -72,8 +72,7 @@
             btnNao.Size = new Size(142, 52);
             btnNao.TabIndex = 2;
             btnNao.Text = "NÃO";
-            btnNao.UseVisualStyleBackColor = true;
-            btnNao.Click += button1_Click;
+            btnNao.UseVisualStyleBackColor = true;            
             btnNao.MouseEnter += btnNao_MouseEnter;
             // 
             // FRMTesteCorinthiano
